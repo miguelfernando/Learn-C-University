@@ -149,9 +149,24 @@
     <Compile Include="Migrations\202003061841437_InitialCreate.designer.cs">
       <DependentUpon>202003061841437_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202003091849085_MaxLengthOnNames.cs" />
+    <Compile Include="Migrations\202003091849085_MaxLengthOnNames.designer.cs">
+      <DependentUpon>202003091849085_MaxLengthOnNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003091852513_ColumnFirstName.cs" />
+    <Compile Include="Migrations\202003091852513_ColumnFirstName.designer.cs">
+      <DependentUpon>202003091852513_ColumnFirstName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202003092010083_ComplexDataModel.cs" />
+    <Compile Include="Migrations\202003092010083_ComplexDataModel.designer.cs">
+      <DependentUpon>202003092010083_ComplexDataModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Enrollment.cs" />
+    <Compile Include="Models\Instructor.cs" />
+    <Compile Include="Models\OfficeAssignment.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\EnrollmentDateGroup.cs" />
@@ -180,7 +195,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -219,6 +236,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202003061841437_InitialCreate.resx">
       <DependentUpon>202003061841437_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003091849085_MaxLengthOnNames.resx">
+      <DependentUpon>202003091849085_MaxLengthOnNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003091852513_ColumnFirstName.resx">
+      <DependentUpon>202003091852513_ColumnFirstName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202003092010083_ComplexDataModel.resx">
+      <DependentUpon>202003092010083_ComplexDataModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
